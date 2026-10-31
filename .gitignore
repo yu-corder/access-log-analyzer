@@ -1,0 +1,49 @@
+# ===== アクセスログ（IP アドレス・UA などの個人情報を含む）=====
+logs/*
+!logs/.gitkeep
+*.log
+*.log.*
+*.gz
+access.log*
+# テスト用のサンプルログは公開してよい（RFC 5737 等のドキュメント用 IP のみ使用）
+!tests/fixtures/*
+
+# ===== 集計結果（IP アドレスを含む）=====
+report*.json
+report*.csv
+reports/
+
+# ===== 認証情報・接続設定（将来の SSH 取得機能用を含む）=====
+config.toml
+!config.example.toml
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+id_ecdsa*
+known_hosts
+*.ppk
+secrets/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ===== OS / エディタ =====
+.DS_Store
+._*
+Thumbs.db
+.vscode/
+.idea/
+*.swp

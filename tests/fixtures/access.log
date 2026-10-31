@@ -1,0 +1,9 @@
+192.0.2.1 - - [30/Oct/2026:23:59:59 +0900] "GET / HTTP/1.1" 200 5120 "-" "Mozilla/5.0 (Macintosh)"
+192.0.2.1 - - [31/Oct/2026:00:00:00 +0900] "GET /posts/hello?utm_source=x HTTP/1.1" 200 2048 "https://example.com/" "Mozilla/5.0"
+198.51.100.7 - alice [31/Oct/2026:10:15:30 +0900] "GET /posts/hello HTTP/2.0" 200 2048 "-" "Mozilla/5.0"
+2001:db8::1 - - [31/Oct/2026:12:00:00 +0900] "POST /api/like HTTP/1.1" 201 - "-" "curl/8.0"
+this line is broken
+198.51.100.7 - - [32/Oct/2026:10:00:00 +0900] "GET /bad-date HTTP/1.1" 200 1 "-" "-"
+
+203.0.113.9 - - [02/Nov/2026:08:00:00 +0900] "\x16\x03\x01\x00" 400 157 "-" "-"
+203.0.113.9 - - [02/Nov/2026:08:00:01 +0900] "GET /search?q=\"nginx\" HTTP/1.1" 200 300 "-" "Bot \"quoted\""

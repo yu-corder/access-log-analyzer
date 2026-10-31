@@ -27,6 +27,23 @@ id_ecdsa*
 known_hosts
 *.ppk
 secrets/
+# SSH 接続設定・本番サーバの情報（ホスト名・IP・ユーザー名・ポート）
+# → 公開リポジトリには *.example.* のダミー値だけを置く
+.ssh/
+ssh_config
+*.ssh_config
+servers.*
+!servers.example.*
+hosts.*
+!hosts.example.*
+inventory*
+*.local.*
+*.local
+*.ovpn
+# サーバから取得したデータのダンプ類
+*.sql
+*.sql.gz
+*.dump
 
 # ===== Python =====
 __pycache__/
